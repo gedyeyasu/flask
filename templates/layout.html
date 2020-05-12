@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>Harvard CS50</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+</head>
+<body>
+    <h1>{% block heading %}{% endblock %}</h1>
+    {% block body %}{% endblock %}
+    <ul>
+        {% for names in name %}
+                {{ names }}<t>
+                {% endfor %}
+      </ul>
+                
+	<div id="1">
+        {% if newyear %}
+        <h1>Yes! Its new year </h1>
+        {% else %}
+        <h1>No! Its not new year {{ date }}</h1>
+
+        {% endif %}
+    
+   
+    <img src="ayrveda.jpg" height="300" width="500">
+    
+</body>
+</html>
